@@ -18,6 +18,7 @@ from django.urls import path
 from notes import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.notes_view, name='notes_view'),
+    path('notes/<id>/', views.notes_detail, name="notes_detail"),
+    path('admin/', admin.site.urls),
 ]

@@ -13,7 +13,7 @@
         <ul>
         {% for id, note in notes.items %}
             <li>
-                <div><a href="/notes/{{id}}">{{notes.title}}</a></div>
+                <div><a href="/notes/{{id}}">{{note.title}}</a></div>
             </li>
         {% endfor %}    
         </ul>

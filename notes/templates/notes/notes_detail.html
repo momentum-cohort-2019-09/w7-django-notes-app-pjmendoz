@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Notes</title>
     <link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css">
 </head>
 <body>
     <div class = container>
-        <h1>{{notes.title}}</h1>
+        <h1>{{note.title}}</h1>
         <ol>
-                <li>{{notes.body}}</li>
+            {% for item in note.items %}    
+                <li>{{item}}</li>
+            {% endfor %}        
         </ol>
+        <p><a href= "/">Go Home</a></p>
     </div>
 </body>
 </html>

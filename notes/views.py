@@ -6,3 +6,7 @@ def notes_view(request):
     return render(request, "notes/notes_view.html", {
         "notes": NOTES,
     })
+
+def notes_detail(request, id):
+    note = NOTES[id]
+    return render(request, "notes/notes_detail.html", {"note": note})
