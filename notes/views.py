@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from notes.data import NOTES
+from notes.models import Note
 
 # Create your views here.
 def notes_view(request): 
