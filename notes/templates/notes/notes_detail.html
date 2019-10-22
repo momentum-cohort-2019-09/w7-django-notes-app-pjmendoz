@@ -1,13 +1,8 @@
 {% extends 'notes/base.html' %}
+{% load markdownify %}
 
-{% block content %}
-   
+{% block content %}  
     <h1>{{note.title}}</h1>
-    <ol>
-        {% for item in note.items %}    
-            <li>{{item}}</li>
-        {% endfor %}        
-    </ol>
+    {{note.body|markdownify}}     
     <p><a href= "/">Go Home</a></p>
-
 {% endblock %}
