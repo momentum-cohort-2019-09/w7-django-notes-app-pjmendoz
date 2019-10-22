@@ -1,0 +1,44 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    letter-spacing: 5px;
+    text-align: center;
+    background-color:#F6ED5B; 
+    color: white; 
+    padding: 1rem; 
+}
+
+ul li {
+    margin: 1rem; 
+    list-style-type: none;
+    color: black; 
+    padding: 1rem; 
+    text-align: center; 
+}
+
+a {
+    color: black; 
+    text-decoration: none; 
+}
+
+a:hover{
+    background: linear-gradient(rgba(241, 178, 53, 0.5),rgba(241, 178, 53, 0.5)); 
+    color: white; 
+    padding: 1rem; 
+}
+
+p {
+    padding: 1rem; 
+    margin-top: 10%; 
+    margin-left: 10%; 
+}
+
+.note {
+    text-align: center; 
+    margin-top: 15%; 
+}
