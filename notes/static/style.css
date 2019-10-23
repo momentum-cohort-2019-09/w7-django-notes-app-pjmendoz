@@ -13,6 +13,18 @@ h1 {
     padding: 1rem; 
 }
 
+.header {
+    letter-spacing: 5px;
+    background-color:#F6ED5B; 
+    color: white; 
+    text-align: center; 
+    background-clip: padding-box; 
+}
+
+img {
+    margin-left: 1350px;
+    margin-bottom: 10px; 
+}
 
 ul li {
     margin: 1rem; 
@@ -43,9 +55,4 @@ button:hover {
     background-color: rgba(241, 178, 53, 0.5); 
     border: none; 
     color:white;  
-}
-
-
-form {
-    background-position: center; 
 }
