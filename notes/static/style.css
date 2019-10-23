@@ -13,6 +13,7 @@ h1 {
     padding: 1rem; 
 }
 
+
 ul li {
     margin: 1rem; 
     list-style-type: none;
@@ -27,7 +28,7 @@ a {
 }
 
 a:hover{
-    background: linear-gradient(rgba(241, 178, 53, 0.5),rgba(241, 178, 53, 0.5)); 
+    background-color: rgba(241, 178, 53, 0.5);  
     color: white; 
     padding: 1rem; 
 }
@@ -41,4 +42,12 @@ p {
 .note {
     text-align: center; 
     margin-top: 15%; 
+}
+
+form {
+    margin: 0 auto; 
+}
+
+button {
+    background-color: rgba(241, 178, 53, 0.5);  
 }
