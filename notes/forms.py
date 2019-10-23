@@ -1,6 +1,8 @@
 from django import forms
+from notes.models import Note
 
-class NoteForm(forms.Form):
-    title = forms.CharField(label="Note Title", max_length=100)
-    description = forms.CharField(widget=forms.Textarea, required=False)
+class NoteForm(forms.ModelForm):
     
+    class Meta: 
+        model = Note
+        fields = ['title', 'description']

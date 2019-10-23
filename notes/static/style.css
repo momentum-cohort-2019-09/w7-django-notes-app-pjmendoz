@@ -33,9 +33,9 @@ a:hover{
     padding: 1rem; 
 }
 
-p {
+.button {
     padding: 1rem; 
-    margin-top: 10%; 
+    margin-top: 5%; 
     margin-left: 10%; 
 }
 
@@ -44,10 +44,15 @@ p {
     margin-top: 15%; 
 }
 
-form {
-    margin: 0 auto; 
-}
-
 button {
     background-color: rgba(241, 178, 53, 0.5);  
+}
+
+form {
+    background-position: center; 
+}
+
+helptext{
+    padding: 1rem; 
+    margin: 0 auto; 
 }
