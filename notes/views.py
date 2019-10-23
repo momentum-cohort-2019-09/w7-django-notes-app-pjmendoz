@@ -3,7 +3,7 @@ from notes.models import Note
 from notes.forms import NoteForm
 
 # Create your views here.
-def notes_view(request): 
+def notes_list(request): 
     notes = Note.objects.all()
     return render(request, "notes/notes_list.html", {
         "notes": notes,

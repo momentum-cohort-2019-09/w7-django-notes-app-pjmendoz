@@ -25,18 +25,7 @@ ul li {
 a {
     color: black; 
     text-decoration: none; 
-}
-
-a:hover{
-    background-color: rgba(241, 178, 53, 0.5);  
-    color: white; 
     padding: 1rem; 
-}
-
-.button {
-    padding: 1rem; 
-    margin-top: 5%; 
-    margin-left: 10%; 
 }
 
 .note {
@@ -45,14 +34,18 @@ a:hover{
 }
 
 button {
-    background-color: rgba(241, 178, 53, 0.5);  
+    background-color: rgba(241, 178, 53, 0.8); 
+    border: none; 
+    color: white;  
 }
+
+button:hover {
+    background-color: rgba(241, 178, 53, 0.5); 
+    border: none; 
+    color:white;  
+}
+
 
 form {
     background-position: center; 
-}
-
-helptext{
-    padding: 1rem; 
-    margin: 0 auto; 
 }
