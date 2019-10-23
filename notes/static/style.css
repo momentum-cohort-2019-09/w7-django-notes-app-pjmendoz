@@ -21,6 +21,11 @@ h1 {
     background-clip: padding-box; 
 }
 
+img {
+    margin-left: 1350px;
+    margin-bottom: 10px; 
+}
+
 ul li {
     margin: 1rem; 
     list-style-type: none;
@@ -35,11 +40,11 @@ a {
     padding: 1rem; 
 }
 
-a:hover {
+/* a:hover {
     background-color: rgba(241, 178, 53, 0.5); 
     border: none; 
     color:white;  
-}
+} */
 
 .note {
     text-align: center; 
