@@ -18,7 +18,7 @@ def notes_new(request):
         form = NoteForm(request.POST)
         if form.is_valid():
             note = form.save()
-            return redirect(to='notes_view')
+            return redirect('notes_list')
     else: 
         form = NoteForm()    
     return render (request, "notes/notes_new.html", {"form": form})
