@@ -11,5 +11,6 @@
          </div>
     </div>
     <div class= note>{{note.description|markdownify}}</div>
-    <small><a href="{% url 'notes_edit' pk=note.pk %}">Edit</a></small></h3>
+    <small><a href="{% url 'notes_edit' pk=note.pk %}">Edit</a></small>
+    <small><a href="{% url 'notes_delete' pk=note.pk %}">Delete</a></small>
 {% endblock %}
