@@ -1,0 +1,15 @@
+{% extends 'notes/base.html' %}
+{% load markdownify %}
+
+{% block content %}  
+
+<h1>Search Results</h1>
+<ul>
+    {{% for note in notes_list %}}
+    <li>
+        {{note.title}}, {{note.description}}
+    </li>
+    {{% endfor %}}
+</ul>
+{{note.title}{{note.description}}
+{% endblock %}

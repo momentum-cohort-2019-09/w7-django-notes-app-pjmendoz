@@ -27,17 +27,14 @@ img {
 }
 
 ul li {
-    margin: 1rem; 
     list-style-type: none;
     color: black; 
-    padding: 1rem; 
     text-align: center; 
 }
 
 a {
     color: black; 
     text-decoration: none; 
-    padding: 1rem; 
 }
 
 /* a:hover {
@@ -48,7 +45,6 @@ a {
 
 .note {
     text-align: center; 
-    margin-top: 15%; 
 }
 
 
