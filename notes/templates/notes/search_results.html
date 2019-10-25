@@ -1,0 +1,17 @@
+{% extends "notes/base.html" %}
+
+{% block content %}
+<div class = "header">
+        <h1>Searched Results</h1>
+        <p class = "home"><a href= "/"><img src ="https://image.flaticon.com/icons/svg/18/18625.svg" width=30px height=20px></a></p>
+</div>
+
+<ul id="notes">
+  {% for note in notes %}
+  <li>
+    <div id="note.id"><a href="/notes/{{ note.id }}">{{ note.title }}</a></div>
+  </li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

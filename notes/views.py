@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from notes.models import Note
-from notes.forms import NoteForm
+from notes.forms import NoteForm, SearchForm
 from django.db.models import Q
-from notes.forms import SearchForm
 
 # Create your views here.
 def notes_list(request): 
@@ -47,6 +46,19 @@ def notes_delete(request, pk):
     return render(request, 'notes/notes_delete.html',{"note": note})
 
 def search_notes(request):
+    search_notes = []
+    if request.method == "POST":
+        form = SearchForm(request.POST)
+        if form.is_valid():
+            notes = Note.objects.all()
+            data = request.POST.copy()
+            for note in notes:
+                if data.get('search_text') in note.title:
+                    search_notes.append(note)
+            return render(request, 'notes/search_results.html', {'notes': search_notes})   
+    else: 
+        form = SearchForm()  
+    return render(request, 'notes/search_notes.html',{'form': form })           
+
+def sort_notes(request):
     pass
-
-

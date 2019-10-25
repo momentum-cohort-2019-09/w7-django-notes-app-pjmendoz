@@ -8,4 +8,4 @@ class NoteForm(forms.ModelForm):
         fields = ['title', 'description']
 
 class SearchForm(forms.Form): 
-    q=forms.CharField(label='search', max_length=50)
+    search_text = forms.CharField(label="Search Text", max_length=100)
