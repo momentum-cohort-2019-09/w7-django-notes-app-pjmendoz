@@ -30,6 +30,7 @@ ul li {
     list-style-type: none;
     color: black; 
     text-align: center; 
+    margin-top: 10px; 
 }
 
 a {
@@ -37,17 +38,27 @@ a {
     text-decoration: none; 
 }
 
-/* a:hover {
+li:hover {
     background-color: rgba(241, 178, 53, 0.5); 
     border: none; 
     color:white;  
-} */
+    padding: 10px; 
+}
 
 .note {
     text-align: center; 
 }
 
-
 .warning {
     text-align: center; 
+}
+
+p {
+    margin-top: 25px; 
+    text-align: center;
+}
+
+small {
+    margin-top: 15px; 
+    text-align: center;
 }

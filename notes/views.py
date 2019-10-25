@@ -28,6 +28,7 @@ def notes_edit(request, pk):
     note = get_object_or_404(Note, pk=pk)
     if request.method == "POST":
         form = NoteForm(instance=note, data=request.POST)
+        #the model that you are going to be working on this form is that you will update this particular instance
         if form.is_valid():
             note = form.save()
             return redirect(to='notes_detail', pk=note.pk)
@@ -59,6 +60,7 @@ def search_notes(request):
     else: 
         form = SearchForm()  
     return render(request, 'notes/search_notes.html',{'form': form })           
+
 
 def sort_notes(request):
     pass

@@ -2,15 +2,16 @@
 
 {% block content %}    
     <h1>Welcome to your Notes</h1>
+
     <ul>
     {% for note in notes %}
         <li>
-            <div><a href="/notes/{{note.id}}">{{note.title}}</a></div>
+            <div class = "note-title"><a href="/notes/{{note.id}}">{{note.title}}</a></div>
         </li>
     {% endfor %}    
     </ul>
     <p>
-        <a href="{% url 'notes_new' %}">Create a new note</a>
+        <a href="{% url 'notes_new' %}">Create a New Note |</a>
         <a href="{% url 'search_notes' %}">Search Notes</a>
     </p>
 {% endblock %}
