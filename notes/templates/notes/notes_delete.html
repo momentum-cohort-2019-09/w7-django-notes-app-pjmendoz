@@ -2,15 +2,16 @@
 {% block content %}
 <h1>"{{note.title}}"</h1>
 
-<p class = "warning">This will be permanately deleted</p>
-
+<p class = "warning">Are you sure you want to delete this note?</p>
+<p class = "warning">This will be permanately deleted.</p>
 <form action="" method="POST">
 
 {% csrf_token %}  
 
-<button type="submit">Delete</button> 
-   
-<a href="{% url 'notes_list' %}">Cancel</a>
+
+<p><button type="submit">Delete</button> <a href="{% url 'notes_list' %}">Cancel</a></p> 
+
+
 
 </form>
 {% endblock %}

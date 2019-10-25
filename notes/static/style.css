@@ -51,6 +51,8 @@ li:hover {
 
 .warning {
     text-align: center; 
+    color: red; 
+    font-weight: 1000;
 }
 
 p {
@@ -58,7 +60,9 @@ p {
     text-align: center;
 }
 
-small {
-    margin-top: 15px; 
-    text-align: center;
+
+button {
+    border: none; 
+    padding: 10px;
+    font-size: 13pt;    
 }
